@@ -1,0 +1,82 @@
+body, html
+  height: auto
+
+html
+  min-height: 100%
+
+  @media #{$small}
+    padding: 1em
+    background: url(https://lh3.googleusercontent.com/-tCZDcR-QG4g/U3YM6Yfq_5I/AAAAAAAAPjY/H3zSTfoRS3k/w1878-h1344-no/IMG_0059%2Bcopy.jpg)
+    // border: 0.5em solid $body-font-color
+
+body
+  padding-bottom: $large-gutter
+
+  @media #{$small}
+    padding: $column-gutter
+
+h1
+  font-size: 2.5em
+
+  span
+    font-size: 0.5em
+    color: #798382
+
+h2
+  font-size: 2.0em
+  position: relative
+
+  &:before
+    content: ""
+    height: 1px
+    width: 0.7em
+    background: $body-font-color
+    position: absolute
+    top: -0.3em
+    left: 0
+
+#header
+  padding: ($large-gutter - 0.5) 0
+
+#intro
+  margin-bottom: $large-gutter
+
+p
+  &.large
+    font-size: 1.5em
+
+.menu
+  margin-bottom: 0
+
+  @media #{$small}
+    float: right
+
+  li
+    @media #{$small}
+      float: left
+
+  a
+    display: block
+    font-size: 1.3em
+    width: 100%
+
+    @media #{$small}
+      padding: 0.3em 1.5em
+      width: auto
+
+#main-menu
+  padding-top: 1em
+
+// .work
+//   color: #98FFFF
+
+// .about
+//   color: #FF93FF
+
+// .contact
+//   color: #FFFF78
+
+a
+  &:hover
+    margin-bottom: -2px
+    border-bottom: 2px solid white

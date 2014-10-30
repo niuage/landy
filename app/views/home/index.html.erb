@@ -1,0 +1,57 @@
+<header id="header">
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row">
+        <div class="large-6 columns">
+          <h1>Barbara Landy.<span></span></h1>
+        </div>
+        <div class="large-6 columns">
+          <ul class="no-bullet menu" id="main-menu">
+            <li>
+              <%= link_to "Work /", "#", class: "work" %>
+            </li>
+            <li>
+              <%= link_to "About /", "#", class: "about" %>
+            </li>
+            <li>
+              <%= link_to "Contact /", "#", class: "contact" %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="row">
+  <div class="large-12 columns">
+    <h2>Welcome.</h2>
+    <div id="intro">
+      <p class="large">
+        Henri-Émile-Benoît Matisse was a French artist, known for his use of colour and his fluid and original draughtsmanship. He was a draughtsman, printmaker, and sculptor, but is known primarily as a painter.
+      </p>
+
+      <%= link_to "View all my work." %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <h2>Featured Work.</h2>
+  </div>
+  <div class="large-12 columns">
+    <div class="row">
+      <% images.each do |image| %>
+        <div class="large-4 columns">
+          <div class="thumbnail">
+            <%= image_tag image[:url] %>
+            <h3><%= image[:title] %></h3>
+            <p><%= image[:description] %></p>
+          </div>
+        </div>
+      <% end %>
+      <div class="columns"></div>
+    </div>
+  </div>
+</div>
