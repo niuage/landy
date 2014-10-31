@@ -41,11 +41,13 @@
     <h2>Featured Work.</h2>
   </div>
   <div class="large-12 columns">
-    <div class="row">
+    <div class="row gallery">
       <% images.each do |image| %>
         <div class="large-4 columns">
           <div class="thumbnail">
-            <%= image_tag image[:url] %>
+            <div class="image" style="background-image:url(<%= image[:url] %>)">
+
+            </div>
             <h3><%= image[:title] %></h3>
             <p><%= image[:description] %></p>
           </div>
