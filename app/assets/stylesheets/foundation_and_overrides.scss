@@ -134,8 +134,16 @@ $row-width: rem-calc(1160);
 // $anchor-font-color-hover: white;
 
 //// VERSION 2
-$body-bg-color: #F7F5E2;
-$body-bg: $body-bg-color image-url("bg.jpg") 110% -10% no-repeat;
+//$body-bg-color: #F7F5E2;
+// $body-bg: $body-bg-color image-url("bg.jpg") 110% -10% no-repeat;
+// $body-font-color: #333;
+// $header-font-weight: bold;
+// $header-font-color: $body-font-color;
+// $anchor-font-color: #E0684B;
+// $anchor-font-color-hover: darken(#E0684B, 10%);
+
+$body-bg-color: white;
+$body-bg: $body-bg-color image-url("bg3.jpg") 95% -10% no-repeat;
 $body-font-color: #333;
 $header-font-weight: bold;
 $header-font-color: $body-font-color;

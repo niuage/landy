@@ -8,13 +8,13 @@
         <div class="large-6 columns">
           <ul class="no-bullet menu" id="main-menu">
             <li>
-              <%= link_to "Work /", "#", class: "work" %>
+              <%= link_to "Work", "#", class: "work" %>
             </li>
             <li>
-              <%= link_to "About /", "#", class: "about" %>
+              <%= link_to "About", "#", class: "about" %>
             </li>
             <li>
-              <%= link_to "Contact /", "#", class: "contact" %>
+              <%= link_to "Contact", "#", class: "contact" %>
             </li>
           </ul>
         </div>
@@ -46,10 +46,14 @@
         <div class="large-4 columns">
           <div class="thumbnail">
             <div class="image" style="background-image:url(<%= image[:url] %>)">
-
             </div>
-            <h3><%= image[:title] %></h3>
-            <p><%= image[:description] %></p>
+
+            <div class="about">
+              <p class="category"><%= image[:category] %></p>
+              <h3><%= image[:title] %></h3>
+              <p><%= image[:description] %></p>
+              <p class="date"><%= image[:date] %></p>
+            </div>
           </div>
         </div>
       <% end %>
