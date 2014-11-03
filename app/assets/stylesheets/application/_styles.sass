@@ -15,7 +15,7 @@ body
 
   @media #{$small}
     background: $body-bg
-    padding: $column-gutter
+    padding: 0 $column-gutter
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
 
 h1
@@ -39,7 +39,10 @@ h2
     left: 0
 
 #header
-  padding: ($large-gutter - 0.5) 0
+  padding: ($large-gutter / 2) 0 ($large-gutter - 0.5)
+
+  @media #{$large-up}
+    padding: ($large-gutter - 0.5) 0
 
 #intro
   margin-bottom: $large-gutter
