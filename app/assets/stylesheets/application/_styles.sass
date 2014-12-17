@@ -4,10 +4,13 @@ body, html
 html
   min-height: 100%
 
-  @media #{$small}
-    padding: 1em
+  @media #{$medium-up}
+    padding: 2em
     background: image-url("bg2.jpg")
     background-attachment: fixed
+
+  @media #{$small-only}
+    padding: 0
 
 body
   background: $body-bg-color
