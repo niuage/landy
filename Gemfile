@@ -42,3 +42,5 @@ gem 'spring',        group: :development
 gem 'foundation-rails'
 
 gem 'compass-rails'
+
+gem 'rails_12factor', group: :production
